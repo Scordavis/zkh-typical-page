@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+	<title>Аварійно-диспетчерська служба</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Template Basic Images Start -->
+	<!-- <meta property="og:image" content="path/to/image.jpg"> -->
+	<!-- Template Basic Images End -->
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<!-- <a href="#modal-49" data-fancybox class="col-12 d-block text-center mt-5 apartment__modal-btn">Модальное окно</a> -->
+
+
+	<!-- modal -->
+	<div class="container pt-0 emergency-service" id="modal-49"> <!--  style="display: none;" -->
+		<!-- header -->
+		<header class="row pt-3 pb-4 align-items-center emergency-service__header">
+			<div class="col-lg-4 col-md-6 col-sm-8 col-12">
+				<p class="mb-3 mb-md-0 text-sm-left text-center emergency-service__text font-weight-bold emergency-service__text--red">Аварійно-диспетчерська служба</p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-4 col-12">
+				<img src="img/ico-phone.png" class="d-md-inline d-none mr-2 emergency-service__header-icon"><p class="d-md-inline d-block mr-1 text-sm-left text-center font-weight-bold emergency-service__phone">044 <small class="font-weight-normal">209 03 93</small></p>
+			</div>
+			<div class="col-12 mt-3">
+				<p class="text-sm-left text-center font-weight-bold emergency-service__text">Для подання заявки заповніть форму та дочекайтесь дзвінка оператора</p>
+			</div>
+		</header>
+		<!-- form -->
+		<form action="" class="row mb-4 py-4 emergency-service__form-wrapper">
+			<!-- street -->
+			<div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-3 emergency-service__form-input">
+				<div class="input-group">
+					<input type="text" class="p-3 w-100" id="streetInput" placeholder="Оберіть вулицю">
+				</div>
+				<ul class="pl-0 emergency-service__form-list" style="display: none;">
+					<li class="px-3 py-2">Каземирская</li>
+					<li class="px-3 py-2">Причальная</li>
+					<li class="px-3 py-2">Ростовская</li>
+					<li class="px-3 py-2">Алая</li>
+				</ul>
+			</div>
+			<!-- house -->
+			<div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-3 emergency-service__form-input">
+				<div class="input-group">
+					<select class="p-3 custom-select" id="select-street">
+						<option selected>Номер будинку</option>
+						<option value="1">1</option>
+						<option value="2">1а</option>
+						<option value="3">1б</option>
+						<option value="4">2</option>
+						<option value="5">3</option>
+						<option value="6">3а</option>
+					</select>
+				</div>
+			</div>
+			<!-- apartment -->
+			<div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-3 emergency-service__form-input">
+				<div class="input-group">
+					<select class="p-3 custom-select" id="select-street">
+						<option selected>Номер квартири</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+					</select>
+				</div>
+			</div>
+			<!-- phone number -->
+			<div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-3 emergency-service__form-input">
+				<div class="input-group">
+					<input class="p-3 border-0 w-100" type="text" placeholder="Номер вашого телефону">
+				</div>
+			</div>
+			<!-- damage -->
+			<div class="col-lg-8 col-md-8 col-sm-7 col-12 mb-3 emergency-service__form-input">
+				<div class="input-group">
+					<select class="p-3 custom-select" id="select-street">
+						<option selected>Оберіть вид пошкодження</option>
+						<option value="1">Поламана свістюлька</option>
+						<option value="2">Поламана кішка</option>
+						<option value="3">Не працює зять</option>
+						<option value="4">Долар по 27 гривень</option>
+						<option value="5">По телику одна маячня</option>
+						<option value="6">Чухається щось...</option>
+					</select>
+				</div>
+			</div>
+			<!-- submit -->
+			<div class="col-lg-3 col-md-4 col-sm-5 col-10 offset-1 offset-sm-0 mt-0 mt-lg-2 emergency-service__form-input">
+				<button type="submit" class="w-100 py-3 emergency-service__form-btn emergency-service__form-btn--red">Надіслати заявку<i class="pl-2 fa fa-angle-double-right"></i></button>
+			</div>
+		</form>
+		<p class="mb-1 text-sm-left text-center font-weight-bold emergency-service__text">Через декілька хвилин тут Ви зможете перевірити стан виконання Вашої заявки</p>
+		<p class="mb-3 text-sm-left text-center font-weight-bold emergency-service__text emergency-service__text--blue">Інформація про Вашу заявку</p>
+		<div class="row">
+			<!-- left side -->
+			<div class="col-12 col-lg-6 mb-2 claim">
+				<!-- wrapper dlja borderov v mobilnoj versii -->
+				<div class="mb-3 pb-2 claim__text-wrapper">
+					<p class="d-block d-sm-inline text-sm-left text-center emergency-service__text claim__text">Ваша заявка:<span class="ml-1 font-weight-bold claim__text claim__text--blue" data-emergency-claim="number">№1234</span><span class="mx-3">/</span></p>
+					<p class="d-block d-sm-inline text-sm-left text-center emergency-service__text claim__text">Дата/час:<span class="ml-1 font-weight-bold" data-emergency-claim="date">10.07.2018/22:57</span></p>
+				</div>
+				<!-- wrapper dlja borderov v mobilnoj versii -->
+				<div class="mb-3 pb-2 claim__text-wrapper">
+					<p class="d-block d-sm-inline text-sm-left text-center emergency-service__text claim__text">Майстер:<span class="ml-1 font-weight-bold claim__text claim__text--blue" data-emergency-claim="master">Иванов Олександр</span><span class="mx-3">/</span></p>
+					<p class="d-block d-sm-inline text-sm-left text-center emergency-service__text claim__text">Телефон:<span class="ml-1 font-weight-bold" data-emergency-claim="master-phone">095 258 28 44</span></p>
+				</div>
+				<!-- wrapper dlja borderov v mobilnoj versii -->
+				<div class="mb-3 pb-2 claim__text-wrapper">
+					<p class="d-block d-sm-inline text-sm-left text-center emergency-service__text claim__text">Орієнтовний час прибуття бригади:<span class="ml-1 font-weight-bold claim__text claim__text--blue" data-emergency-claim="arrived">23:17</span></p>
+				</div>
+				<!-- wrapper dlja borderov v mobilnoj versii -->
+				<div class="mb-3 pb-2 claim__text-wrapper">
+					<p class="d-block d-sm-inline text-sm-left text-center emergency-service__text claim__text">Оцінити роботу бригади:</p>
+					<div class="d-block d-sm-inline ml-2 text-sm-left text-center claim__rating" id="star-rating">
+						<input type="radio" name="example" class="rating" value="1" />
+						<input type="radio" name="example" class="rating" value="2" />
+						<input type="radio" name="example" class="rating" value="3" />
+						<input type="radio" name="example" class="rating" value="4" />
+						<input type="radio" name="example" class="rating" value="5" />
+					</div>
+				</div>
+			</div>
+			<!-- right side -->
+			<div class="col-12 col-lg-6 chat">
+				<form action="" class="w-100 mb-4">
+					<div class="input-group">
+						<input type="text" class="form-control py-3 chat__input" placeholder="Введіть повідомлення" aria-label="Recipient's username" aria-describedby="button-addon2">
+						<div class="input-group-append">
+							<button class="py-3 px-4 chat__button" type="button" id="button-chat"><img src="img/enter.svg" alt="" class="chat__button-img"></button>
+						</div>
+					</div>
+				</form>
+				<div class="chat__window p-3">
+					<div class="chat__window-wrapper">
+						<!-- start message block -->
+						<div class="row mb-3 justify-content-start chat__message">
+							<p class="col mb-1 font-weight-bold chat__author" data-chat="author">Администратор</p>
+							<p class="col mb-0 text-center chat__date" data-chat="date">30.07.2018</p>
+							<p class="col-1 mb-0 text-center">&#47;</p>
+							<p class="col mb-0 text-center chat__time" data-chat="time">11:33:58</p>
+							<p class="col-12 chat__text" data-chat="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ipsam suscipit, quas id eius maiores corporis commodi dignissimos a natus?</p>
+						</div>
+						<!-- start message block -->
+						<div class="row mb-3 justify-content-start chat__message">
+							<p class="col mb-1 font-weight-bold chat__author" data-chat="author">Ви</p>
+							<p class="col mb-0 text-center chat__date" data-chat="date">30.06.2018</p>
+							<p class="col-1 mb-0 text-center">&#47;</p>
+							<p class="col mb-0 text-center chat__time" data-chat="time">12:47:12</p>
+							<p class="col-12 chat__text" data-chat="message">quas id eius maiores corporis commodi dignissimos a natus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ipsam suscipit, quas i</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 mb-3 pt-3 emergency-service__table-wrapper">
+				<p class="mb-3 font-weight-bold emergency-service__text">Заявки в роботі</p>
+				<table class="w-100 emergency-service__table js-table">
+					<!-- start table-header -->
+					<thead>
+						<tr class="row emergency-service__table-header">
+							<th class="col-12 col-sm-3 py-4 text-center font-weight-normal emergency-service__table-data">Дата/Час</th>
+							<th class="col-12 col-sm-3 py-4 text-center font-weight-normal emergency-service__table-data">Адреса</th>
+							<th class="col-12 col-sm-3 py-4 text-center font-weight-normal emergency-service__table-data">Категорія звернення</th>
+							<th class="col-12 col-sm-3 py-4 text-center font-weight-normal emergency-service__table-data">Статус</th>
+						</tr>
+					</thead>
+					<!-- end table-header -->
+					<tbody>
+						<!-- start row -->
+						<tr class="row emergency-service__table-row">
+							<td class="col-12 col-sm-3 py-3 text-center emergency-service__table-data" data-emergency-table="date">10-07-2018 / 17:00:48</td>
+							<td class="col-12 col-sm-3 py-3 text-center emergency-service__table-data" data-emergency-table="adress">Центральная, 57; Кв.15</td>
+							<td class="col-12 col-sm-3 py-3 text-center emergency-service__table-data" data-emergency-table="damage">Сміття</td>
+							<td class="col-12 col-sm-3 py-3 text-center font-weight-bold emergency-service__table-data" data-emergency-table="completed">Закрита</td>
+						</tr>
+						<!-- end row -->
+						<!-- start row -->
+						<tr class="row emergency-service__table-row">
+							<td class="col-12 col-sm-3 py-3 text-center emergency-service__table-data" data-emergency-table="date">10-07-2018 / 08:12:00</td>
+							<td class="col-12 col-sm-3 py-3 text-center emergency-service__table-data" data-emergency-table="adress">Урицького, 47; Кв.98</td>
+							<td class="col-12 col-sm-3 py-3 text-center emergency-service__table-data" data-emergency-table="damage">Холодне водопостачання</td>
+							<td class="col-12 col-sm-3 py-3 text-center font-weight-bold emergency-service__table-data" data-emergency-table="unchecked">Неперевірена</td>
+						</tr>
+						<!-- end row -->
+						<!-- start row -->
+						<tr class="row emergency-service__table-row">
+							<td class="col-12 col-sm-3 py-3 text-center emergency-service__table-data" data-emergency-table="date">10-07-2018 / 00:37:12</td>
+							<td class="col-12 col-sm-3 py-3 text-center emergency-service__table-data" data-emergency-table="adress">Київська, 130; Кв.202</td>
+							<td class="col-12 col-sm-3 py-3 text-center emergency-service__table-data" data-emergency-table="damage">ліфт</td>
+							<td class="col-12 col-sm-3 py-3 text-center font-weight-bold emergency-service__table-data" data-emergency-table="inProgress">Незакрита</td>
+						</tr>
+						<!-- end row -->
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+	<script src="js/rating.js"></script>
+	<script>
+		$(function(){                   // Start when document ready
+	    $('#star-rating').rating(); // Call the rating plugin
+	  });
+	</script>
+	<script src="js/common.js"></script>
+</body>
+</html>
