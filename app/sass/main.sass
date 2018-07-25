@@ -24,14 +24,6 @@ body
 			border-color: red
 		&:required:valid
 			border-color: green
-	select
-		-webkit-appearance: none
-		-moz-appearance: none
-		appearance: none
-		background-image: url('../img/icon-plus.png')
-		background-repeat: no-repeat
-		background-position: 96% center
-
 
 b, strong
 	font-weight: bold
@@ -116,203 +108,196 @@ button
 	&--100
 		width: 100%
 
+// .header-page
+.header-page
+	position: relative
+	min-height: 70px
+	color: white
+	font-size: 18px
+	z-index: 8
+	&__wrapper
+	&__item
+		&--logo
+			max-width: 60px
 
-// Modal avariynaja-sluzhba ------------------------------------------------------------------------------------------------------------------------------
-
-// .emergency-service
-.emergency-service
-	min-height: 1px
-	font-size: 17px
-
-	// header
-	&__header
+	&__icon
+	&__emergency
+		@include transition(.3s)
 	&__text
-		color: fade-out(black, .47)
-		&--red
-			color: $danger
-		&--blue
-			color: $accent
+		font-size: 18px
+		text-transform: uppercase
+		&--bigger
+			font-weight: bold
+		&--logo-title
+			font-size: 24px
+			font-weight: bold
+			line-height: 1.2
+		&--logo-description
+			text-transform: lowercase
+			font-weight: normal
 
-	&__phone
-		position: relative
-		top: 4px
-		font-size: 30px
-		line-height: 2px
+// .navbar
+.navbar
+	min-height: 80px
+	height: 80px
+	&__container
+		align-self: stretch
 
-	&__header-icon
-
-	// form-wrapper
-	&__form-wrapper
-		background-color: darken(white, 6%)
-		select
-			display: block
-			-webkit-appearance: none
-			-moz-appearance: none
-			appearance: none
-			background-image: url('../img/chevron-down.png')
-			background-repeat: no-repeat
-			background-position: 100% center
-			padding-right: 20px
-			box-sizing: content-box
-			border: none
-			cursor: pointer
-
-	&__form-input
-		input
-			border: none
-
-	&__form-list
-		position: absolute
-		top: 60px
-		width: 92%
-		height: auto
-		background-color: white
+	&__background-image
+		background-size: cover
+		background-position: 0 center
+		background-repeat: no-repeat
+		opacity: .5
+	&__wrapper
+		text-transform: uppercase
+		font-weight: bold
+	&__item
+		list-style-position: inside
 		list-style-type: none
-		z-index: 2
-		& li
-			background-color: white
+		a
 			&:hover
-				background-color: darken(white, 8%)
-				cursor: pointer
-
-	&__form-btn
-		@include transition(.2s)
-		&--red
-			color: white
-			background-color: $danger
-			border: 1px solid transparent
-			&:hover
-				background-color: transparent
-				color: $danger
-				border: 1px solid $danger
-
-	// table
-	&__table-wrapper
-	&__table
-		font-size: 13px
-		border-collapse: collapse
-
-	&__table-header
-		color: white
-		background-color: darken(white, 47%)
-
-	&__table-row
+				text-decoration: none
+	// dropdown
+	&-dropdown
+		max-width: 250px
 		background-color: white
-		&:nth-child(even)
-			background-color: darken(white, 3%)
+		list-style-position: inside
+		list-style-type: none
+		&--item
 
-	&__table-data
-		border-right: 1px solid darken(white, 17%)
-		border-bottom: 1px solid darken(white, 17%)
-		&:first-of-type
-			border-right: 1px solid darken(white, 17%)
-			border-left: 1px solid darken(white, 17%)
-		&[data-emergency-table='completed']
-			color: $success
-
-		&[data-emergency-table='unchecked']
-			color: $second
-
-		&[data-emergency-table='inProgress']
-			color: $danger
-
-
-// .claim
-.claim
-	&__text
-		position: relative
-		&--blue
-			color: $accent
-
-		&-wrapper
-			border-bottom: 1px solid darken(white, 8%)
-
-	&__rating
-
-.stars
-	display: inline-block
-
-.star
-  background-image: url('../img/rating.png')
-  background-position: left -2px
-  display: block
-  width: 20px
-  height: 16px
-  line-height: 16px
-  float: left
-  cursor: pointer
-  zoom: 1
-
-
-.fullStar
-  background-position: left -59px
-
-
-.stars
-  overflow: hidden
-
-
-.tmp_es
-  background-position: left -21px
-
-
-.tmp_fs
-  background-position: left -40px
-
-// .chat
-.chat
-	&__input
-		background-color: darken(white, 3%)
-		border: none
-		border-radius: 0
+.nav-dropdown
+	position: relative
+	width: 100%
 
 	&__button
-		background-color: $accent
+		font-weight: bold
+		text-transform: uppercase
+		list-style-position: inside
+		list-style-type: none
+		text-shadow: white -1px -1px 9px, white 1px 1px 9px, white 1px 0 9px,	white 0 1px 9px, white -2px -2px 9px, white 2px 2px 9px, white 2px 0 9px, white 0 2px 9px
+		opacity: 1
+		@include transition(.2s)
 		&:hover
-			background-color: lighten($accent, 4%)
-		&-img
-			width: 22px
-			height: 25px
+			text-decoration: none
+			opacity: .7
 
-	&__window
+	&__content
+		display: none
+		position: absolute
+		width: 100%
+		min-width: 300px
+		left: 0
+		right: 0
+		padding-left: 15px
+		padding-right: 15px
+		background-color: $accent
+		box-shadow: 0px 2px 8px fade-out($text, .4)
+		z-index: 6
+
+		&--form
+			min-width: 300px
+			background: transparent
+			box-shadow: none
+
+	&__item
 		position: relative
-		background-color: darken(white, 3%)
-		&:before
-			display: block
+		display: block
+		padding: 2px 6px
+		text-align: left
+		@include transition(.2s)
+		&:after
 			position: absolute
-			content: ''
-			top: -8px
-			left: 48%
-			width: 16px
-			height: 16px
-			background-color: darken(white, 3%)
-			transform: rotate(45deg)
-
-		&-wrapper
+			top: 0
+			right: 10px
 			display: block
-			height: 190px
-			overflow-y: auto
-			overflow-x: hidden
+			content: '\226B'
+			opacity: 0
+			@include transition(.2s)
+		&:hover
+			text-decoration: none
+			&:after
+				right: 0
+				opacity: 1
 
-	&__message
-	&__author
-		color: $accent
-	&__date
+// .logo-company
+.logo-company
+	position: relative
+	background-color: white
+	z-index: 2
+	&:after
+		position: absolute
+		display: block
+		content: ''
+		height: 200%
+		width: 90px
+		right: -50px
+		background-color: inherit
+		transform: rotate(25deg)
+		z-index: 1
+	&__self
+		z-index: 10
+
+// .slider
+.slider
+	&__wrapper
 		position: relative
+		height: 300px
+		z-index: 4
 
-	&__time
+// .news
+.news
+	&__heading
+	&__card
+		display: block
+		height: auto
+
+	&__img
+		position: relative
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		display: block
+		height: 180px
+		background-image: url(../img/placeholder.png)
+		background-size: cover
+		background-position: center
+		box-shadow: 0 0px 0px lighten(black, 40%)
+		cursor: pointer
+		@include transition(.3s)
+		&:hover
+			box-shadow: 0 4px 20px lighten(black, 40%)
+
+	&__title
+		font-size: 18px
+
+	&__description
+	&__attribute
+		&--time
+			&:before
+				content: attr(data-publication)
+
+		&--views
+			&:before
+				content: attr(data-popularity)
+				margin-right: 4px
+
+// .important-sections
+.important-sections
+	&:hover
+		text-decoration: none
+
+	&__card
+		box-shadow: 0 0px 0px lighten(black, 40%)
+		cursor: pointer
+		@include transition(.3s)
+		&:hover
+			box-shadow: 0 4px 20px lighten(black, 40%)
+
+	&__img
+		font-size: 48px
+
 	&__text
-		color: black
-		font-size: 14px
-
-
-
-
-
-
-
-
-
 
 
 

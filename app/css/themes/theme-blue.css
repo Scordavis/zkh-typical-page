@@ -1,0 +1,18 @@
+/*.theme-colors*/
+.theme__text--accent {
+  color: #243cf3; }
+
+.theme__text--danger {
+  color: #f33924; }
+
+.theme__text--normal {
+  color: #666666; }
+
+.theme__bg--accent {
+  background-color: #243cf3; }
+
+.theme__bg--danger {
+  background-color: #f33924; }
+
+.theme__bg--normal {
+  background-color: #ffffff; }

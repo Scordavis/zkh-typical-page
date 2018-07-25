@@ -1,0 +1,264 @@
+/*============================================rdykukha========User zayavka to dispetcher ================================*/
+
+
+
+
+.request-disp-form {
+	font-size:16px;
+	color:rgb(127,127,127);
+	font-family: 'Ubuntu';
+}
+
+
+.request-disp-form #phones {
+	font-size: inherit;
+	position: relative;
+	right: -90px;
+}
+
+.request-disp-form #send-request{
+	color:red;
+	border:2px solid red;
+  	padding:10px;	
+}
+
+
+.request-disp-form input {
+	width: 100%;
+	padding:5px;	
+	font-size: 15px;
+	border: 2px solid gray;
+}
+
+.request-disp-form .main-container{
+	width:70%;
+	float: left;
+}
+
+.request-disp-form .adr-container {
+	overflow: hidden;
+}
+
+.request-disp-form .tel-container {
+	overflow: hidden;
+}
+
+.request-disp-form .damage-container {
+	overflow: hidden;	
+}
+
+.request-disp-form .adr-container,.tel-container{
+	margin-bottom: 20px;
+}
+
+.request-disp-form .right{
+	float:right;
+	overflow: hidden;
+}
+
+.request-disp-form .main-container h4{
+	margin:0 10px 0 0;
+	padding: 0;
+	float:left;
+}
+
+.request-disp-form .street{
+	width:270px;
+	margin-right: 10px;
+	float: left;
+}
+.request-disp-form .house{
+	width:100px;
+	margin-right: 10px;
+	float: left;
+}
+.request-disp-form .flat{
+	width:100px;	
+	float: left;
+}
+
+.request-disp-form .request-categ {
+	width: 200px;
+}
+
+.dop-container {
+	float:left;
+	
+}
+
+
+.holder-request-info .info div{
+	margin-bottom: 10px;
+}
+
+.request-disp-form .holder-request-info{
+	float: left;
+	width:50%;
+}
+
+.request-disp-form .holder-chat{
+	float: right;
+}
+
+ div.request-table {
+	max-height: 200px;
+	overflow:scroll;
+
+}
+
+.main-container {
+	overflow:hidden; 
+	height:225px;
+}
+
+.request-disp-form .img-container{
+	float: right;
+}
+
+
+
+.request-disp-form #request-num {
+  color:#7cb0df;
+}
+
+.request-disp-form #damage {
+    font-size:17px;	
+}
+
+
+.request-disp-form #request-master-fio, #request-time,#request-master-fio,#request-time-work {
+color:#7cb0df;
+font-weight:bold;
+}
+
+.request-disp-form table {
+	width:100%;
+	border-collapse: collapse;
+	border:1px solid black;
+}
+.request-disp-form td{
+	padding: 5px;	
+	border:1px solid black;
+}
+
+.request-disp-form th {
+	background-color:rgb(112,146,190);
+	color: rgb(255,255,255);
+	font-weight:normal;
+	padding:10px;
+	border:1px solid black;
+	font-size:16px;
+}
+
+
+
+#request-num,#request-time,#request-master-fio,#request-master-tel,#request-time-work {
+	border-bottom: 1px solid gray;
+	display:inline-block;	
+	text-align:center
+
+}
+
+
+
+.search_result1{
+	/*position:relative;*/
+	margin:0px; padding:5px; position:absolute;
+top:0px;left:0px;
+    background: #FFF;
+    border: 1px #ccc solid;
+    width: 100%;
+   
+    max-height:150px;
+    overflow-y:auto;
+    display:none;
+	
+} 
+
+.search_result1 li{
+    list-style: none;
+    
+   
+    color: #0896D3;
+    /*border-bottom: 1px #ccc solid;*/
+    cursor: pointer;
+    transition:0.3s;
+}
+
+.search_result li:hover, .search_result1 li:hover{
+    background: rgba(196,255,167, 1);
+}
+
+
+/*================================rating===============================*/
+
+.rating {
+    float:left;
+}
+
+.rating label{
+	margin: 0;
+	padding: 0;
+}
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    /*padding:0 .1em;*/
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    /*line-height:1.2;*/
+    color:#ddd;
+    /*text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);*/
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+color: gold;
+    /*color: #f70;*/
+    /*text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);*/
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    /*text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);*/
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+color: gold;
+    /*color: #ea0;*/
+  /*  text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);*/
+}
+
+.rating > label:active {
+    position:relative;
+   /* top:2px;
+    left:2px;*/
+}
+
+/*======================================================================*/
+
+
+@media screen and (max-width: 1100px) {
+
+	
+}
+/*=========================================================================================================*/

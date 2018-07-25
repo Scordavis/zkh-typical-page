@@ -1,0 +1,41 @@
+
+.orange, .bottom-links { /*текст в слайдере и ссылки снизу*/
+	color: #FFE4E1 !important;
+}
+
+.i-clock, .subject-text, .i-eye, .header-nav { /*плашка меню, иконки в новостях*/
+	color: #DF0101!important;
+}
+
+h2:after, #page_title:before {
+	color: rgba(223, 1, 1, 0.24) !important; /*подложка под h2*/
+}
+
+.i-location, .i-phone, .i-attention { /*цвет иокнок сверху и снизу*/
+	color: #CDBA96 !important;
+}
+
+.bx-pager-link:active { /* цвет активной точки в слайдере*/
+	background: #DF0101 !important; 
+}
+
+/*стрелки переключения слайдера новостей*/
+.news-slider-wrap .bx-prev {
+	background: #DF0101 url(/tpl/images/sm-arrow-left.png) center center no-repeat !important;
+}
+
+.news-slider-wrap .bx-next {
+	background: #DF0101 url(/tpl/images/sm-arrow-right.png) center center no-repeat !important;
+}
+
+.news-slider-wrap .bx-prev:focus,
+.news-slider-wrap .bx-prev:hover {
+	background: rgba(223, 1, 1, 0.678) url(/tpl/images/sm-arrow-left.png) center center no-repeat !important;
+}
+
+.news-slider-wrap .bx-next:focus,
+.news-slider-wrap .bx-next:hover {
+	background: rgba(223, 1, 1, 0.678)  url(/tpl/images/sm-arrow-right.png) center center no-repeat !important;
+}
+
+

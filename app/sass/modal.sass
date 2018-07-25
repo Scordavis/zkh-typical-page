@@ -1,0 +1,189 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+// .emergency-service
+.emergency-service
+	min-height: 1px
+	font-size: 17px
+
+	// header
+	&__header
+	&__text
+		color: fade-out(black, .47)
+		&--red
+			color: $danger
+		&--blue
+			color: $accent
+
+	&__phone
+		position: relative
+		top: 4px
+		font-size: 30px
+		line-height: 2px
+
+	&__header-icon
+
+	// form-wrapper
+	&__form-wrapper
+		background-color: darken(white, 6%)
+		select
+			display: block
+			-webkit-appearance: none
+			-moz-appearance: none
+			appearance: none
+			background-image: url('../img/chevron-down.png')
+			background-repeat: no-repeat
+			background-position: 100% center
+			padding-right: 20px
+			box-sizing: content-box
+			border: none
+			cursor: pointer
+
+	&__form-input
+		input
+			border: none
+
+	&__form-list
+		position: absolute
+		top: 60px
+		width: 92%
+		height: auto
+		background-color: white
+		list-style-type: none
+		z-index: 2
+		& li
+			background-color: white
+			&:hover
+				background-color: darken(white, 8%)
+				cursor: pointer
+
+	&__form-btn
+		@include transition(.2s)
+		&--red
+			color: white
+			background-color: $danger
+			border: 1px solid transparent
+			&:hover
+				background-color: transparent
+				color: $danger
+				border: 1px solid $danger
+
+	// table
+	&__table-wrapper
+	&__table
+		font-size: 13px
+		border-collapse: collapse
+
+	&__table-header
+		color: white
+		background-color: darken(white, 47%)
+
+	&__table-row
+		background-color: white
+		&:nth-child(even)
+			background-color: darken(white, 3%)
+
+	&__table-data
+		border-right: 1px solid darken(white, 17%)
+		border-bottom: 1px solid darken(white, 17%)
+		&:first-of-type
+			border-right: 1px solid darken(white, 17%)
+			border-left: 1px solid darken(white, 17%)
+		&[data-emergency-table='completed']
+			color: $success
+
+		&[data-emergency-table='unchecked']
+			color: $second
+
+		&[data-emergency-table='inProgress']
+			color: $danger
+
+
+// .claim
+.claim
+	&__text
+		position: relative
+		&--blue
+			color: $accent
+
+		&-wrapper
+			border-bottom: 1px solid darken(white, 8%)
+
+	&__rating
+
+.stars
+	display: inline-block
+
+.star
+  background-image: url('../img/rating.png')
+  background-position: left -2px
+  display: block
+  width: 20px
+  height: 16px
+  line-height: 16px
+  float: left
+  cursor: pointer
+  zoom: 1
+
+
+.fullStar
+  background-position: left -59px
+
+
+.stars
+  overflow: hidden
+
+
+.tmp_es
+  background-position: left -21px
+
+
+.tmp_fs
+  background-position: left -40px
+
+// .chat
+.chat
+	&__input
+		background-color: darken(white, 3%)
+		border: none
+		border-radius: 0
+
+	&__button
+		background-color: $accent
+		&:hover
+			background-color: lighten($accent, 4%)
+		&-img
+			width: 22px
+			height: 25px
+
+	&__window
+		position: relative
+		background-color: darken(white, 3%)
+		&:before
+			display: block
+			position: absolute
+			content: ''
+			top: -8px
+			left: 48%
+			width: 16px
+			height: 16px
+			background-color: darken(white, 3%)
+			transform: rotate(45deg)
+
+		&-wrapper
+			display: block
+			height: 190px
+			overflow-y: auto
+			overflow-x: hidden
+
+	&__message
+	&__author
+		color: $accent
+	&__date
+		position: relative
+
+	&__time
+	&__text
+		color: black
+		font-size: 14px
+

@@ -49,7 +49,8 @@ gulp.task('js', function() {
 gulp.task('watch', ['styles', 'js', 'browser-sync'], function() {
 	gulp.watch('app/'+syntax+'/**/*.'+syntax+'', ['styles']);
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
-	gulp.watch('app/*.html', browserSync.reload)
+	gulp.watch('app/*.html', browserSync.reload);
+	gulp.watch('app/*.php', browserSync.reload);
 });
 
 gulp.task('default', ['watch']);
