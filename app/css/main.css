@@ -5031,6 +5031,7 @@ button {
 
 .news__card {
   display: block;
+  width: 270px;
   height: auto; }
 
 .news__img {
@@ -5069,6 +5070,7 @@ button {
   text-decoration: none; }
 
 .important-sections__card {
+  width: 280px;
   -webkit-box-shadow: 0 0px 0px #666666;
           box-shadow: 0 0px 0px #666666;
   cursor: pointer;
@@ -5081,6 +5083,9 @@ button {
 
 .important-sections__img {
   font-size: 48px; }
+
+.important-sections__text {
+  font-size: 13px; }
 
 .footer-page__nav {
   list-style-type: none; }
@@ -5096,6 +5101,10 @@ button {
 
 .footer-page__link:hover {
   opacity: .7; }
+
+.footer-page__copyright {
+  font-size: 13px;
+  font-weight: light; }
 
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {
