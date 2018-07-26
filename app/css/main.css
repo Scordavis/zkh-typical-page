@@ -5021,6 +5021,14 @@ button {
   height: 300px;
   z-index: 4; }
 
+.slide__text-heading {
+  height: 80px;
+  font-size: 16px; }
+
+.slide__text-description--bigger {
+  font-size: 20px;
+  font-weight: bold; }
+
 .news__card {
   display: block;
   height: auto; }
