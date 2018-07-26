@@ -1,27 +1,27 @@
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @font-face {
-  font-family: "ubuntu";
+  font-family: "MuseoSans";
   font-weight: light;
   font-style: normal;
   src: url("../fonts/MuseoSansLight/MuseoSansLight.eot");
   src: url("../fonts/MuseoSansLight/MuseoSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansLight/MuseoSansLight.woff") format("woff"), url("../fonts/MuseoSansLight/MuseoSansLight.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "ubuntu";
+  font-family: "MuseoSans";
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/MuseoSansRegular/MuseoSansRegular.eot");
   src: url("../fonts/MuseoSansRegular/MuseoSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansRegular/MuseoSansRegular.woff") format("woff"), url("../fonts/MuseoSansRegular/MuseoSansRegular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "ubuntu";
+  font-family: "MuseoSans";
   font-weight: medium;
   font-style: normal;
   src: url("../fonts/MuseoSansMedium/MuseoSansMedium.eot");
   src: url("../fonts/MuseoSansMedium/MuseoSansMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansMedium/MuseoSansMedium.woff") format("woff"), url("../fonts/MuseoSansMedium/MuseoSansMedium.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "ubuntu";
+  font-family: "MuseoSans";
   font-weight: bold;
   font-style: normal;
   src: url("../fonts/MuseoSansBold/MuseoSansBold.eot");
@@ -4769,7 +4769,44 @@ strong {
   font-weight: bold; }
 
 .font-weight-medium {
-  font-weight: medium; }
+  font-weight: 500; }
+
+.bx-wrapper {
+  margin-top: 1px; }
+
+#subj-pages-block {
+  display: none;
+  width: 70%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.6);
+  padding-bottom: 20px; }
+
+#name {
+  color: brown;
+  font-weight: bolder; }
+
+#one-comment {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #fff; }
+
+#comment {
+  padding: 10px; }
+
+#open-form a {
+  color: blue;
+  font-weight: bolder;
+  cursor: pointer;
+  padding: 20px; }
+
+#open-form a:hover {
+  color: red;
+  font-weight: bolder; }
+
+#error-comment {
+  font-weight: bolder;
+  color: red; }
 
 .reset-link {
   color: inherit; }
@@ -4968,9 +5005,9 @@ button {
     position: absolute;
     display: block;
     content: '';
-    height: 200%;
-    width: 90px;
-    right: -50px;
+    height: 360px;
+    width: 360px;
+    right: -220px;
     background-color: inherit;
     -webkit-transform: rotate(25deg);
         -ms-transform: rotate(25deg);

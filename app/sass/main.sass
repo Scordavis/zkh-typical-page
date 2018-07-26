@@ -17,6 +17,7 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	color: $text
+	// font-weight: $defolt-weight
 	counter-reset: section
 	input, textarea
 		outline: none
@@ -29,10 +30,52 @@ b, strong
 	font-weight: bold
 
 .font-weight-medium
-	font-weight: medium
+	font-weight: 500
+
 
 // custom classes
+.bx-wrapper
+	margin-top:  1px
 
+
+#subj-pages-block
+	display: none
+	width: 70%
+	margin: 0 auto
+	background: rgba(255,255,255,0.6)
+	padding-bottom: 20px
+
+
+
+#name
+	color: brown
+	font-weight: bolder
+
+
+#one-comment
+	width: 100%
+	padding: 10px
+	margin-bottom: 10px
+	background: #fff
+
+#comment
+	padding: 10px
+
+#open-form a
+	color: blue
+	font-weight: bolder
+	cursor: pointer
+	padding: 20px
+
+
+#open-form a
+	&:hover
+		color: red
+		font-weight: bolder
+
+#error-comment
+	font-weight: bolder
+	color: red
 // reset-links
 .reset-link
 	color: inherit
@@ -232,9 +275,9 @@ button
 		position: absolute
 		display: block
 		content: ''
-		height: 200%
-		width: 90px
-		right: -50px
+		height: 360px
+		width: 360px
+		right: -220px
 		background-color: inherit
 		transform: rotate(25deg)
 		z-index: 1
