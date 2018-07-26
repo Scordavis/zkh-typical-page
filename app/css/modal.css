@@ -4740,6 +4740,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
       -moz-appearance: none;
       appearance: none;
       background-image: url("../img/chevron-down.png");
+      -webkit-background-size: 30px 7px;
+              background-size: 30px 7px;
       background-repeat: no-repeat;
       background-position: 100% center;
       padding-right: 20px;

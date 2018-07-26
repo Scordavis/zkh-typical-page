@@ -4764,7 +4764,9 @@ strong {
 .reset-link {
   color: inherit; }
   .reset-link:hover, .reset-link:active, .reset-link:focus {
-    color: inherit; }
+    color: inherit;
+    outline: none;
+    text-decoration: none; }
 
 button {
   outline: none;
@@ -5024,6 +5026,21 @@ button {
 
 .important-sections__img {
   font-size: 48px; }
+
+.footer-page__nav {
+  list-style-type: none; }
+
+.footer-page__li:before {
+  position: relative;
+  content: '-';
+  top: 4px;
+  display: inline-block;
+  margin-right: 4px;
+  font-size: 200%;
+  line-height: 0; }
+
+.footer-page__link:hover {
+  opacity: .7; }
 
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {

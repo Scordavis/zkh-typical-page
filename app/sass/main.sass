@@ -36,6 +36,8 @@ b, strong
 	color: inherit
 	&:hover,&:active,&:focus
 		color: inherit
+		outline: none
+		text-decoration: none
 
 // button outline reset
 button
@@ -298,6 +300,34 @@ button
 		font-size: 48px
 
 	&__text
+
+// .footer-page
+.footer-page
+	&__item
+	&__text
+	&__nav
+		list-style-type: none
+	&__li
+		&:before
+			position: relative
+			content: '-'
+			top: 4px
+			display: inline-block
+			margin-right: 4px
+			font-size: 200%
+			line-height: 0
+
+	&__link
+		&:hover
+			opacity: .7
+
+
+
+
+
+
+
+
 
 
 
