@@ -4909,6 +4909,7 @@ button {
       font-weight: bold;
       line-height: 1.2; }
     .header-page__text--logo-description {
+      font-size: 18px;
       text-transform: lowercase;
       font-weight: normal; }
 
@@ -5021,6 +5022,10 @@ button {
   height: 300px;
   z-index: 4; }
 
+.slide__overlay {
+  position: absolute;
+  left: 0; }
+
 .slide__text-heading {
   height: 80px;
   font-size: 16px; }
@@ -5028,6 +5033,10 @@ button {
 .slide__text-description--bigger {
   font-size: 20px;
   font-weight: bold; }
+
+@media (max-width: 1449.98px) {
+  .slide__overlay {
+    left: -10vw; } }
 
 .news__card {
   display: block;
@@ -5109,8 +5118,27 @@ button {
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {
   body {
-    font-size: 14px;
-    line-height: 1.65; } }
+    font-size: 14px; }
+  .header-page__text--logo-title {
+    font-size: 20px;
+    line-height: 1.2; }
+  .header-page__text--logo-description {
+    font-size: 14px; }
+  .logo-company {
+    position: relative;
+    background-color: white;
+    z-index: 2; }
+    .logo-company:after {
+      right: -60px;
+      -webkit-transform: rotate(25deg);
+          -ms-transform: rotate(25deg);
+              transform: rotate(25deg); }
+  .slide__overlay {
+    left: -38vw; }
+  .news__card {
+    width: auto; }
+  .important-sections__card {
+    width: auto; } }
 
 @media (max-width: 767.98px) {
   .emergency-service__table-header {

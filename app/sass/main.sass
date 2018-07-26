@@ -180,6 +180,7 @@ button
 			font-weight: bold
 			line-height: 1.2
 		&--logo-description
+			font-size: 18px
 			text-transform: lowercase
 			font-weight: normal
 
@@ -291,6 +292,10 @@ button
 		height: 300px
 		z-index: 4
 .slide
+	&__overlay
+		position: absolute
+		left: 0
+
 	&__text
 	&__text-heading
 		height: 80px
@@ -301,6 +306,10 @@ button
 		&--bigger
 			font-size: 20px
 			font-weight: bold
+@media (max-width: 1449.98px)
+	.slide
+		&__overlay
+			left: -10vw
 
 // .news
 .news
