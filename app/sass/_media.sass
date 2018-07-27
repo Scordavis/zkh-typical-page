@@ -40,7 +40,8 @@
 
 	.footer-page
 		&__text
-			font-size: 1.3vw
+			&--responsive
+				font-size: 1.3vw
 
 // ≥992px
 +media-breakpoint-down(md)
@@ -51,6 +52,11 @@
 	.navbar
 		&__background-image
 			display: none
+
+	.footer-page
+		&__text
+			&--responsive
+				font-size: inherit
 
 // ≥768px
 +media-breakpoint-down(sm)
@@ -67,6 +73,10 @@
 			display: block
 			text-align: center
 			width: 100%
+	.slide
+		&__text-heading
+			height: auto
+			line-height: 1.4
 
 // ≥576px
 +media-breakpoint-down(xs)
@@ -83,6 +93,10 @@
 			display: block
 			text-align: center
 			width: 100%
+	.slide
+		&__text-heading
+			height: auto
+			line-height: 1.2
 
 
 

@@ -5031,6 +5031,9 @@ button {
   .nav__link-wrapper--mobile {
     display: none; }
 
+.nav-show {
+  display: block; }
+
 .logo-company {
   position: relative;
   background-color: white;
@@ -5158,14 +5161,16 @@ button {
     width: auto; }
   .important-sections__card {
     width: auto; }
-  .footer-page__text {
+  .footer-page__text--responsive {
     font-size: 1.3vw; } }
 
 @media (max-width: 991.98px) {
   .logo-company:after {
     display: none; }
   .navbar__background-image {
-    display: none; } }
+    display: none; }
+  .footer-page__text--responsive {
+    font-size: inherit; } }
 
 @media (max-width: 767.98px) {
   .emergency-service__table-header {
@@ -5180,7 +5185,10 @@ button {
       font-weight: bold;
       display: block;
       text-align: center;
-      width: 100%; } }
+      width: 100%; }
+  .slide__text-heading {
+    height: auto;
+    line-height: 1.4; } }
 
 @media (max-width: 575.98px) {
   .emergency-service__table-header {
@@ -5195,6 +5203,9 @@ button {
       font-weight: bold;
       display: block;
       text-align: center;
-      width: 100%; } }
+      width: 100%; }
+  .slide__text-heading {
+    height: auto;
+    line-height: 1.2; } }
 
 /*==========  Mobile First  ==========*/

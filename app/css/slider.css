@@ -68,14 +68,15 @@
   list-style-type: none; }
   @media (max-width: 991px) {
     .slider-pagi {
-      bottom: 0;
-      top: 20px;
-      left: 15%; } }
+      width: 100%;
+      bottom: 20px;
+      left: 50%;
+      text-align: center;
+      padding: 0; } }
   @media (max-width: 767px) {
     .slider-pagi {
       left: 50%;
-      width: 100%;
-      height: 3.2rem; } }
+      width: 100%; } }
 
 .slider-pagi__elem {
   position: relative;
@@ -91,8 +92,6 @@
   background-color: red; }
   @media (max-width: 991px) {
     .slider-pagi__elem {
-      width: 3rem;
-      height: 3rem;
       margin: 0 1rem; } }
 
 .slider-pagi__elem:before {
