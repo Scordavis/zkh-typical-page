@@ -5087,6 +5087,9 @@ button {
 .important-sections__text {
   font-size: 13px; }
 
+.footer-page__text {
+  font-size: 18px; }
+
 .footer-page__nav {
   list-style-type: none; }
 
@@ -5127,7 +5130,9 @@ button {
   .news__card {
     width: auto; }
   .important-sections__card {
-    width: auto; } }
+    width: auto; }
+  .footer-page__text {
+    font-size: 1.3vw; } }
 
 @media (max-width: 767.98px) {
   .emergency-service__table-header {
