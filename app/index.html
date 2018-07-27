@@ -69,6 +69,21 @@
 	.theme__bg--light {
 		background-color: #ffffff;
 	}
+	.theme__rad--accent {
+		border-color: #243cf3;
+	}
+	.theme__rad--danger {
+		border-color: #f33924;
+	}
+	.theme__rad--normal {
+		border-color: #cecece;
+	}
+	.theme__rad--dark {
+		border-color: #555555;
+	}
+	.theme__rad--light {
+		border-color: #ffffff;
+	}
 	/*slick arrows*/
 	.slick-prev, .slick-next {
 		color: grey;
@@ -86,28 +101,28 @@
 	<header class="container-fluid header-page theme__bg--dark" style="background-image: url(img/bg-abstract.png);">
 		<div class="row h-100 align-items-center px-3 py-2">
 			<!-- header-page__item location-->
-			<div class="col header-page__item">
+			<div class="col-lg col-md-4 header-page__item">
 				<i class="mr-1 fa fa-map-marker header-page__icon theme__text--accent"></i>
 				<p class="d-inline header-page__text theme__text--light">Стебник.ua</p>
 			</div>
 			<!-- header-page__item phone -->
-			<div class="col header-page__item">
+			<div class="col-lg col-md-4 header-page__item">
 				<i class="mr-1 fa fa-phone header-page__icon theme__text--accent"></i>
 				<p class="d-inline header-page__text header-page__text--bigger theme__text--light">032-44-22-80</p>
 			</div>
 			<!-- header-page__item emergency -->
-			<div class="offset-xl-1 offset-0 col-xl-3 col-lg-3 header-page__item text-center text-xl-left">
+			<div class="col-xl-4 col-lg-3 col-md-4 header-page__item">
 				<i class="mr-1 fa fa-exclamation-triangle header-page__icon theme__text--danger"></i>
 				<p class="d-inline mr-2 header-page__text header-page__text--bigger theme__text--light">032-44-31-08</p>
-				<p class="d-inline d-lg-block mb-0 header-page__text header-page__text--bigger"><a href="#emergencyWindow" data-fancybox class="header-page__emergency reset-link theme__text--danger">аварійна служба</a></p>
+				<p class="d-xl-inline d-lg-block mb-0  header-page__text header-page__text--bigger"><a href="#emergencyWindow" data-fancybox class="header-page__emergency reset-link theme__text--danger">аварійна служба</a></p>
 			</div>
 			<!-- header-page__item godfather logo -->
-			<div class="col-xl-3 col-lg-4 text-right header-page__item">
+			<div class="col-lg-3 col-md-12 text-right header-page__item">
 				<div class="row no-gutters align-items-center">
-					<div class="offset-xl-1 offset-0 col-4 mr-2">
+					<div class="offset-0 offset-xl-1 col-xl-4 col-lg-3 col-md-1 pr-2">
 						<img src="img/logo-transparent.svg" class="header-page__item--logo" alt="">
 					</div>
-					<div class="col-6">
+					<div class="col-xl-6 col-lg-7 col-3">
 						<p class="mb-0 text-left header-page__text header-page__text--logo-title theme__text--light">фру - жкг<span class="mb-0 d-block header-page__text header-page__text--logo-description">інвестиції в працю</span></p>
 					</div>
 				</div>
@@ -120,11 +135,11 @@
 			<div class="offset-xl-4 offset-lg-3 h-100 navbar__background-image" style="background-image: url(img/bg-nav.jpg);"></div>
 		</div>
 		<div class="container-fluid navbar__container h-100">
-			<div class="col-lg-3 h-100 d-flex align-items-center logo-company">
+			<div class="col-lg-3 col-md-7 h-100 d-flex align-items-center logo-company">
 				<img src="img/logo-company.jpg" class="img-fluid logo-company__self" alt="">
 			</div>
-			<!-- site nav buttons-->
-			<div class="col-lg-8 h-100 d-none d-md-block col-7 col-xl-7 col-lg-6 col-md-4 nav__link-wrapper">
+			<!-- site nav buttons desctop-->
+			<div class="col-lg-8 h-100 d-none d-lg-block col-7 col-xl-7 col-lg-6 col-md-4 nav__link-wrapper">
 				<div class="row no-gutters h-100 align-items-center">
 					<!-- nav__item dropdown list-->
 					<div class="col text-lg-center text-md-right nav__item">
@@ -178,6 +193,79 @@
 					</div>
 				</div>
 			</div>
+			<!-- hamburger button -->
+			<div class="col-4 h-100 d-flex d-lg-none col-md-4 align-items-center justify-content-end">
+				<button class="hamburger theme__rad--accent"  id="hamburger">
+					<span class="mx-auto my-1 hamburger__bar theme__bg--accent"></span>
+					<span class="mx-auto my-1 hamburger__bar theme__bg--accent"></span>
+					<span class="mx-auto my-1 hamburger__bar theme__bg--accent"></span>
+				</button>
+			</div>
+
+
+
+
+
+			<!-- site nav buttons handler-->
+			<div class="col-12 nav__link-wrapper nav__link-wrapper--mobile">
+				<div class="row no-gutters py-3 h-100 align-items-center theme__bg--dark">
+					<!-- nav__item dropdown list-->
+					<div class="col-12 my-2 text-md-center nav__item nav__item--mobile">
+						<div class="nav-dropdown js-dropdown">
+							<a href="#" class="reset-link nav__link nav__link--mobile nav-dropdown__button theme__text--dark">про нас</a>
+							<div class="nav-dropdown__content nav-dropdown__content--mobile theme__bg--light">
+								<a href="#" class="text-center text-uppercase reset-link nav-dropdown__item nav-dropdown__item--mobile theme__text--dark">Керівництво</a>
+								<a href="#" class="text-center text-uppercase reset-link nav-dropdown__item nav-dropdown__item--mobile theme__text--dark">Контакти</a>
+								<a href="#" class="text-center text-uppercase reset-link nav-dropdown__item nav-dropdown__item--mobile theme__text--dark">Структура підприємства</a>
+								<a href="#" class="text-center text-uppercase reset-link nav-dropdown__item nav-dropdown__item--mobile theme__text--dark">Телефонний довідник</a>
+							</div>
+						</div>
+					</div>
+					<!-- nav__item dropdown list-->
+					<div class="col-12 my-2 text-md-center nav__item nav__item--mobile">
+						<div class="nav-dropdown js-dropdown">
+							<a href="#" class="reset-link nav__link nav__link--mobile nav-dropdown__button theme__text--dark">тарифи</a>
+							<div class="nav-dropdown__content nav-dropdown__content--mobile theme__bg--light">
+								<a href="#" class="text-center text-uppercase reset-link nav-dropdown__item nav-dropdown__item--mobile theme__text--dark">Нормативні акти</a>
+								<a href="#" class="text-center text-uppercase reset-link nav-dropdown__item nav-dropdown__item--mobile theme__text--dark">Структура тарифу</a>
+								<a href="#" class="text-center text-uppercase reset-link nav-dropdown__item nav-dropdown__item--mobile theme__text--dark">Оголошення про перегляд</a>
+								<a href="#" class="text-center text-uppercase reset-link nav-dropdown__item nav-dropdown__item--mobile theme__text--dark">Діючі тарифи</a>
+							</div>
+						</div>
+					</div>
+					<!-- nav__item dropdown list-->
+					<div class="col-12 my-2 text-md-center nav__item nav__item--mobile">
+						<div class="reset-link nav-dropdown js-dropdown">
+							<a href="#" class="reset-link nav__link nav__link--mobile nav-dropdown__button theme__text--dark">споживачам</a>
+							<div class="nav-dropdown__content nav-dropdown__content--mobile theme__bg--light">
+								<a href="#" class="text-center text-uppercase reset-link nav-dropdown__item nav-dropdown__item--mobile theme__text--dark">Оплата послуг</a>
+								<a href="#" class="text-center text-uppercase reset-link nav-dropdown__item nav-dropdown__item--mobile theme__text--dark">Пільги</a>
+								<a href="#" class="text-center text-uppercase reset-link nav-dropdown__item nav-dropdown__item--mobile theme__text--dark">Корисна інформація</a>
+							</div>
+						</div>
+					</div>
+					<!-- nav__item dropdown list-->
+					<div class="col-12 my-2 text-md-center nav__item nav__item--mobile">
+						<div class="reset-link nav-dropdown js-dropdown">
+							<a href="#" class="reset-link nav__link nav__link--mobile nav-dropdown__button theme__text--dark">офіційне</a>
+							<div class="nav-dropdown__content nav-dropdown__content--mobile theme__bg--light">
+								<a href="#" class="text-center text-uppercase reset-link nav-dropdown__item nav-dropdown__item--mobile theme__text--dark">Оголошення</a>
+								<a href="#" class="text-center text-uppercase reset-link nav-dropdown__item nav-dropdown__item--mobile theme__text--dark">Державні закупівлі</a>
+								<a href="#" class="text-center text-uppercase reset-link nav-dropdown__item nav-dropdown__item--mobile theme__text--dark">Звітність</a>
+							</div>
+						</div>
+					</div>
+					<!-- nav__item -->
+					<div class="col-12 my-2 text-md-center nav__item nav__item--mobile">
+						<a href="#" class="d-md-block reset-link nav__link nav__link--mobile nav-dropdown__button theme__text--dark">Кабінет</a>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
 		</div>
 	</div>
 	<!-- slider -->
@@ -332,7 +420,7 @@
 	<div class="container-fluid py-2 theme__bg--normal">
 		<div class="row mt-5 pb-5">
 			<!-- important-sections__card -->
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-6 col-12 mt-2 mt-lg-0 mb-4 mb-lg-0">
 				<div class="m-auto important-sections__card py-3 theme__bg--light">
 					<a href="#" class="d-block w-100 mb-2 py-2 important-sections">
 						<div class="row theme__text--danger">
@@ -346,7 +434,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-6 col-12 mt-2 mt-lg-0 mb-4 mb-lg-0">
 				<div class="m-auto important-sections__card py-3 theme__bg--light">
 					<a href="#" class="d-block w-100 mb-2 py-2 important-sections">
 						<div class="row theme__text--danger">
@@ -361,7 +449,7 @@
 				</div>
 			</div>
 			<!-- important-sections__card -->
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-6 col-12 mt-2 mt-lg-0 mb-4 mb-lg-0">
 				<div class="m-auto important-sections__card py-3 theme__bg--light">
 					<a href="#" class="d-block w-100 mb-2 py-2 important-sections">
 						<div class="row theme__text--danger">
@@ -376,7 +464,7 @@
 				</div>
 			</div>
 			<!-- important-sections__card -->
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-6 col-12 mt-2 mt-lg-0 mb-4 mb-lg-0">
 				<div class="m-auto important-sections__card py-3 theme__bg--light">
 					<a href="#" class="d-block w-100 mb-2 py-2 important-sections">
 						<div class="row theme__text--danger">

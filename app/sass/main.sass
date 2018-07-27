@@ -240,6 +240,8 @@ button
 		background-color: $accent
 		box-shadow: 0px 2px 8px fade-out($text, .4)
 		z-index: 6
+		&--mobile
+			position: relative
 
 		&--form
 			min-width: 300px
@@ -266,6 +268,43 @@ button
 				right: 0
 				opacity: 1
 
+// .hamburger
+.hamburger
+	position: relative
+	width: 40px
+	height: 40px
+	border-width: 3px
+	border-style: solid
+	border-radius: 40px
+	z-index: 2
+	opacity: 1
+	cursor: pointer
+	&:hover
+		opacity: .8
+	&:focus
+		opacity: .8
+
+	&__wrapper
+		border-width: 2px
+		border-style: solid
+		border-radius: 100%
+
+	&__img
+	&__bar
+		display: block
+		width: 22px
+		height: 2px
+		border-radius: 1px
+
+.nav
+	&__item
+		&--mobile
+	&__link
+		&--mobile
+	&__link-wrapper
+		z-index: 10
+		&--mobile
+			display: none
 // .logo-company
 .logo-company
 	position: relative
@@ -367,6 +406,8 @@ button
 		font-size: 18px
 	&__nav
 		list-style-type: none
+
+
 	&__li
 		&:before
 			position: relative
@@ -376,6 +417,7 @@ button
 			margin-right: 4px
 			font-size: 200%
 			line-height: 0
+
 
 	&__link
 		&:hover
