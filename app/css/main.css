@@ -5109,8 +5109,25 @@ button {
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {
   body {
-    font-size: 14px;
-    line-height: 1.65; } }
+    font-size: 14px; }
+  .header-page__text--logo-title {
+    font-size: 20px;
+    line-height: 1.2; }
+  .header-page__text--logo-description {
+    font-size: 14px; }
+  .logo-company {
+    position: relative;
+    background-color: white;
+    z-index: 2; }
+    .logo-company:after {
+      right: -60px;
+      -webkit-transform: rotate(25deg);
+          -ms-transform: rotate(25deg);
+              transform: rotate(25deg); }
+  .news__card {
+    width: auto; }
+  .important-sections__card {
+    width: auto; } }
 
 @media (max-width: 767.98px) {
   .emergency-service__table-header {
