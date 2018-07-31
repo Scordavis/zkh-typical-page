@@ -4,7 +4,7 @@
 /*==========  Desktop First  ==========*/
 
 // ≥1200px
-@media (max-width: 1199.98px)
++media-breakpoint-down(lg)
 	body
 		font-size: 14px
 	.header-page
@@ -44,7 +44,7 @@
 				font-size: 1.3vw
 
 // ≥992px
-@media (max-width: 991.98px)
++media-breakpoint-down(md)
 	.logo-company
 		&:after
 			display: none
@@ -59,7 +59,7 @@
 				font-size: inherit
 
 // ≥768px
-@media (max-width: 767.98px)
++media-breakpoint-down(sm)
 	.emergency-service__table-header
 		display: none
 	.emergency-service tbody .emergency-service__table-data
@@ -79,7 +79,7 @@
 			line-height: 1.4
 
 // ≥576px
-@media (max-width: 575.98px)
++media-breakpoint-down(xs)
 	.emergency-service__table-header
 		display: none
 	.emergency-service tbody .emergency-service__table-data
@@ -100,3 +100,22 @@
 
 
 
+
+
+
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
