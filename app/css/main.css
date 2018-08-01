@@ -371,7 +371,7 @@ button {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 22vw;
+    left: 16vw;
     opacity: .6; }
   .slide__text-heading {
     height: 100px;
@@ -401,7 +401,7 @@ button {
     content: url(../img/lg-arrow-left.png); }
 
 .slick-next {
-  left: 66vw; }
+  left: 65vw; }
   .slick-next:before {
     -o-transition: 0.2s;
     -webkit-transition: 0.2s;
@@ -440,6 +440,36 @@ button {
 .slick__text-description--bigger {
   font-size: 20px;
   font-weight: bold; }
+
+@media (max-width: 1679.98px) {
+  .slide__overlay {
+    left: 18vw; } }
+
+@media (max-width: 1439.98px) {
+  .slide__overlay {
+    left: 17vw; } }
+
+@media (max-width: 1365.98px) {
+  .slide__overlay {
+    left: 33vw; } }
+
+@media (max-width: 1279.98px) {
+  .slide__overlay {
+    left: 33vw; } }
+
+@media (max-width: 1090px) {
+  .slide__overlay {
+    left: -15vw;
+    width: 200% !important; } }
+
+@media (max-width: 1023.98px) {
+  .slide__overlay {
+    left: -15vw;
+    width: 200% !important; } }
+
+@media (max-width: 991px) {
+  .slide__overlay {
+    width: 300% !important; } }
 
 .news__card {
   display: block;
@@ -562,7 +592,7 @@ button {
       text-align: center;
       width: 100%; }
   .slide__text-heading {
-    height: auto;
+    height: 14vw;
     line-height: 1.4; } }
 
 @media (max-width: 575.98px) {
@@ -580,5 +610,5 @@ button {
       text-align: center;
       width: 100%; }
   .slide__text-heading {
-    height: auto;
+    height: 17vw;
     line-height: 1.2; } }

@@ -349,7 +349,7 @@ button
 		top: 0
 		right: 0
 		bottom: 0
-		left: 22vw
+		left: 16vw
 		opacity: .6
 
 	&__overlay-path
@@ -385,7 +385,7 @@ button
 			content: url(../img/lg-arrow-left.png)
 
 	&-next
-		left: 66vw
+		left: 65vw
 		&:before
 			@include transition(.2s)
 			content: url(../img/lg-arrow-right.png)
@@ -421,11 +421,41 @@ button
 						box-shadow: 0px 0px 0px 4px #daa520
 						opacity: 1
 
-
 	&__text-description
 		&--bigger
 			font-size: 20px
 			font-weight: bold
+
+@media (max-width: 1679.98px)
+	.slide__overlay
+		left: 18vw
+
+@media (max-width: 1439.98px)
+	.slide__overlay
+		left: 17vw
+
+@media (max-width: 1365.98px)
+	.slide__overlay
+		left: 33vw
+
+@media (max-width: 1279.98px)
+	.slide__overlay
+		left: 33vw
+
+@media (max-width: 1090px)
+	.slide__overlay
+		left: -15vw
+		width: 200%!important
+
+@media (max-width: 1023.98px)
+	.slide__overlay
+		left: -15vw
+		width: 200%!important
+
+
+@media (max-width: 991px)
+	.slide__overlay
+		width: 300%!important
 
 // .news
 .news
@@ -512,6 +542,7 @@ button
 	&__copyright
 		font-size: 13px
 		font-weight: light
+
 
 
 

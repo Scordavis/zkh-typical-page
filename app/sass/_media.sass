@@ -60,8 +60,10 @@
 
 // ≥768px
 @media (max-width: 767.98px)
-	.emergency-service__table-header
-		display: none
+	.emergency-service
+		&__table-header
+			display: none
+		&__phone
 	.emergency-service tbody .emergency-service__table-data
 		display: block
 		&:first-child
@@ -75,13 +77,15 @@
 			width: 100%
 	.slide
 		&__text-heading
-			height: auto
+			height: 14vw
 			line-height: 1.4
 
 // ≥576px
 @media (max-width: 575.98px)
-	.emergency-service__table-header
-		display: none
+	.emergency-service
+		&__table-header
+			display: none
+		&__phone
 	.emergency-service tbody .emergency-service__table-data
 		display: block
 		&:first-child
@@ -95,7 +99,7 @@
 			width: 100%
 	.slide
 		&__text-heading
-			height: auto
+			height: 17vw
 			line-height: 1.2
 
 
