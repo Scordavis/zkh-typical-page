@@ -297,6 +297,31 @@
 						</div>
 					</div>
 				</div>
+				<!-- slide-->
+				<div class="position-relative slide">
+					<div class="slide__bg h-100 w-100 position-absolute" style="background-image: url(img/snow.jpg);">
+					</div>
+					<div class="slide__content">
+						<!-- visible overlay  on desctop -->
+						<svg class="d-lg-block d-none position-absolute w-100 h-100 slide__overlay" viewbox="-150 0 1920 405" preserveaspectratio="xMaxYMax slice">
+							<path class="slide__overlay-path visible-lg visible-md-path" d="M500,0 1500,0 1500,405 300,405" style="fill: #666666"/>
+						</svg>
+						<!-- visible overlay  on handler -->
+						<svg class="d-lg-none d-block position-absolute w-100 h-100 slide__overlay" viewbox="0 0 1920 405" preserveaspectratio="xMaxYMax slice">
+							<path class="slide__overlay-path visible-lg visible-md-path" d="M0,0 1500,0 1500,405 0,405" style="fill: #666666"/>
+						</svg>
+						<div class="container-fluid h-100">
+							<div class="row h-100">
+								<div class="offset-lg-6 col-lg-6 h-100 pl-5 py-4 slide__text">
+									<h2 class="mb-2 pt-3 text-uppercase text-center text-lg-left slide__text-heading theme__text--light">Послуги:<span class="ml-2 slide__text-heading--smaller">виробництво та транспортування теплової енергії</span></h2>
+									<p class="mb-0 text-center text-lg-left slide__text-description theme__text--light">Рік заснування підприємства:<span class="ml-2 text-normal slide__text-description--bigger">2017</span></p>
+									<p class="mb-0 text-center text-lg-left slide__text-description theme__text--light">Кількість співробітників:<span class="ml-2 mr-1 slide__text-description--bigger">0 осіб</p>
+									<p class="mb-0 text-center text-lg-left slide__text-description theme__text--light">Кількість абонентів:<span class="ml-2 mr-1 slide__text-description--bigger">1265</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 	</div>
 	<!-- news-block -->
@@ -695,7 +720,6 @@
 
 	<script>
 		$('#topSlider').slick({
-			// dotsClass: 'col-6 offset-6 position-absolute slider-dots',
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			autoplay: true,
@@ -738,9 +762,9 @@
 			}
 			]
 		});
-	$(function(){                   // Start when document ready
-    $('#star-rating').rating(); // Call the rating plugin
-  });
+		$(function(){                   // Start when document ready
+	    $('#star-rating').rating(); // Call the rating plugin
+	  });
 </script>
 </body>
 </html>
