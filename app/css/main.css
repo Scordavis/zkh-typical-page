@@ -72,43 +72,6 @@ b, strong {
 .font-weight-medium {
   font-weight: 500; }
 
-.bx-wrapper {
-  margin-top: 1px; }
-
-#subj-pages-block {
-  display: none;
-  width: 70%;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.6);
-  padding-bottom: 20px; }
-
-#name {
-  color: brown;
-  font-weight: bolder; }
-
-#one-comment {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  background: #fff; }
-
-#comment {
-  padding: 10px; }
-
-#open-form a {
-  color: blue;
-  font-weight: bolder;
-  cursor: pointer;
-  padding: 20px; }
-
-#open-form a:hover {
-  color: red;
-  font-weight: bolder; }
-
-#error-comment {
-  font-weight: bolder;
-  color: red; }
-
 .reset-link {
   color: inherit; }
   .reset-link:hover, .reset-link:active, .reset-link:focus {
@@ -226,6 +189,8 @@ button {
     background-position: 0 center;
     background-repeat: no-repeat;
     opacity: .5; }
+    .navbar__background-image--wrapper {
+      top: 0; }
   .navbar__wrapper {
     text-transform: uppercase;
     font-weight: bold; }
