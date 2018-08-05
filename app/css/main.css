@@ -72,6 +72,10 @@ b, strong {
 .font-weight-medium {
   font-weight: 500; }
 
+.content-wrapper {
+  position: relative;
+  min-height: 80vh; }
+
 .reset-link {
   color: inherit; }
   .reset-link:hover, .reset-link:active, .reset-link:focus {
@@ -528,7 +532,8 @@ button {
             box-shadow: 0 4px 20px #666666; }
 
 .news__title {
-  font-size: 18px; }
+  font-size: 18px;
+  word-break: break-word; }
 
 .news__attribute--time:before {
   content: attr(data-publication); }
