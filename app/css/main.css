@@ -184,11 +184,16 @@ button {
         -ms-flex-item-align: stretch;
             align-self: stretch; }
   .navbar__background-image {
-    -webkit-background-size: cover;
-            background-size: cover;
     background-position: 0 center;
-    background-repeat: no-repeat;
     opacity: .5; }
+    .navbar__background-image--fullsize {
+      -webkit-background-size: cover;
+              background-size: cover;
+      background-repeat: no-repeat; }
+    .navbar__background-image--pattern {
+      -webkit-background-size: contain;
+              background-size: contain;
+      background-repeat: repeat-x; }
     .navbar__background-image--wrapper {
       top: 0; }
   .navbar__wrapper {
