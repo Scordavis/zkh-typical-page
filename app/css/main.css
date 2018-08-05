@@ -304,20 +304,17 @@ button {
   position: relative;
   background-color: white;
   z-index: 2; }
-  .logo-company:after {
+  .logo-company__self {
+    z-index: 10; }
+  .logo-company__shape {
     position: absolute;
-    display: block;
-    content: '';
-    height: 360px;
-    width: 360px;
-    right: -220px;
-    background-color: inherit;
+    width: 300px;
+    height: 300px;
+    right: -223px;
     -webkit-transform: rotate(25deg);
         -ms-transform: rotate(25deg);
             transform: rotate(25deg);
-    z-index: 1; }
-  .logo-company__self {
-    z-index: 10; }
+    background-color: #ffffff; }
 
 .slider {
   position: relative;
@@ -579,6 +576,10 @@ button {
   font-weight: light; }
 
 /*==========  Desktop First  ==========*/
+@media (max-width: 1440.98px) {
+  .logo-company__shape {
+    right: -160px; } }
+
 @media (max-width: 1199.98px) {
   body {
     font-size: 14px; }
@@ -587,8 +588,8 @@ button {
     line-height: 1.2; }
   .header-page__text--logo-description {
     font-size: 14px; }
-  .logo-company:after {
-    right: -60px; }
+  .logo-company__shape {
+    right: -40px; }
   .news__card {
     width: auto; }
   .important-sections__card {
