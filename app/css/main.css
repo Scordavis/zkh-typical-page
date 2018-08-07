@@ -648,5 +648,5 @@ button {
       text-align: center;
       width: 100%; }
   .slide__text-heading {
-    height: 17vw;
+    height: auto;
     line-height: 1.2; } }
