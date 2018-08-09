@@ -521,7 +521,7 @@ button {
   .slick-next {
     left: 67vw; } }
 
-@media (max-width: 1023.98px) {
+@media (max-width: 1020px) {
   .slide__overlay {
     left: -10vw;
     width: 200% !important; }
