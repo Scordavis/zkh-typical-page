@@ -222,7 +222,10 @@ button {
               background-size: contain;
       background-repeat: repeat-x; }
     .navbar__background-image--wrapper {
-      top: 0; }
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0; }
   .navbar__wrapper {
     text-transform: uppercase;
     font-weight: bold; }
@@ -324,6 +327,20 @@ button {
     -webkit-border-radius: 1px;
             border-radius: 1px; }
 
+.nav__item {
+  position: relative;
+  font-size: 15px; }
+
+.nav__link:after {
+  display: inline-block;
+  position: relative;
+  content: '\/';
+  margin-left: 1vw;
+  color: red; }
+
+.nav__link:last-child:after {
+  display: none; }
+
 .nav__link-wrapper {
   z-index: 10; }
   .nav__link-wrapper--mobile {
@@ -334,7 +351,6 @@ button {
 
 .logo-company {
   position: relative;
-  background-color: white;
   z-index: 2; }
   .logo-company__self {
     z-index: 10; }
@@ -342,7 +358,7 @@ button {
     position: absolute;
     width: 300px;
     height: 300px;
-    right: -223px;
+    right: 0px;
     -webkit-transform: rotate(25deg);
         -ms-transform: rotate(25deg);
             transform: rotate(25deg);
@@ -611,7 +627,7 @@ button {
 /*==========  Desktop First  ==========*/
 @media (max-width: 1440.98px) {
   .logo-company__shape {
-    right: -160px; } }
+    right: 0px; } }
 
 @media (max-width: 1199.98px) {
   body {

@@ -180,6 +180,9 @@ button
 			background-repeat: repeat-x
 		&--wrapper
 			top: 0
+			right: 0
+			bottom: 0
+			left: 0
 
 	&__wrapper
 		text-transform: uppercase
@@ -284,8 +287,22 @@ button
 
 .nav
 	&__item
+		position: relative
+		font-size: 15px
+
 		&--mobile
 	&__link
+		&:after
+			display: inline-block
+			position: relative
+			content: '\/'
+			margin-left: 1vw
+			color: red
+
+		&:last-child
+			&:after
+				display: none
+
 		&--mobile
 	&__link-wrapper
 		z-index: 10
@@ -296,7 +313,6 @@ button
 // .logo-company
 .logo-company
 	position: relative
-	background-color: white
 	z-index: 2
 
 	&__self
@@ -306,7 +322,7 @@ button
 		position: absolute
 		width: 300px
 		height: 300px
-		right: -223px
+		right: 0px
 		transform: rotate(25deg)
 		background-color: #ffffff
 
