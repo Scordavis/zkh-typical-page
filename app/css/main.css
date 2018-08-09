@@ -412,6 +412,7 @@ button {
     opacity: .6; }
   .slide__text-heading {
     height: 100px;
+    font-family: 'MuseoSansBold';
     font-size: 16px;
     font-weight: bold; }
     .slide__text-heading--smaller {
