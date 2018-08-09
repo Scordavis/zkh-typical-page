@@ -34,7 +34,7 @@
 			box-shadow: 0px 0px 0px 4px #daa520;
 		}
 
-		.block-heading--aside-lines span:before, .block-heading--aside-lines span:after{
+		.-aside-lines span:before, .-aside-lines span:after{
 			background-color: #edb636;
 		}
 
@@ -58,7 +58,7 @@
 
 		/*color of nav text first level button and block heading*/
 		.theme__text--dark {
-			color: #555555;
+			color: #716f6f;
 		}
 
 		/*color of nav text first level button in example-3*/
@@ -165,17 +165,17 @@
 		<!-- .navbar -->
 		<div class="navbar">
 			<div class="position-absolute w-100 h-100 navbar__background-image--wrapper">
-				<div class="offset-3 offset-md-6 offset-xl-4 h-100 navbar__background-image navbar__background-image--pattern" style="background-image: url(img/bg/uzor1.png);"></div>
-				<div class="offset-3 offset-md-6 offset-xl-4 h-100 navbar__background-image navbar__background-image--fullsize" style="background-image: url(img/bg-nav.jpg);"></div>
+				<div class="offset-3 offset-md-6 offset-xl-4 h-100 navbar__background-image navbar__background-image--pattern" style="background-image: url(img/bg/uzor9.png);"></div>
+				<div class="offset-3 offset-md-6 offset-xl-4 h-100 navbar__background-image navbar__background-image--fullsize" style="background-image: url(img/bg-nav.jpg); display: none;"></div>
 			</div>
 			<div class="container-fluid navbar__container h-100">
-				<div class="d-flex col-9 col-sm-6 col-md-7 col-lg-3 align-items-center logo-company">
-					<img src="img/logo-company.jpg" class="img-fluid logo-company__self" alt="">
+				<div class="d-flex col-9 col-sm-6 col-md-7 col-lg-3 h-100 align-items-center logo-company">
+					<img src="img/logo-company.png" class="h-100 logo-company__self" alt="">
 					<div class="logo-company__shape theme__bg--light"></div>
 				</div>
 				<!-- site nav buttons desctop-->
 				<div class="col-lg-8 h-100 d-none d-lg-block col-7 col-xl-7 col-lg-6 col-md-4 nav__link-wrapper">
-					<div class="row no-gutters h-100 align-items-center">
+					<div class="row no-gutters h-100 justify-content-start align-items-center">
 						<!-- nav__item dropdown list-->
 						<div class="col text-lg-center text-md-right nav__item">
 							<div class="nav-dropdown js-dropdown">
@@ -312,7 +312,7 @@
 						<div class="container-fluid h-100">
 							<div class="row h-100">
 								<div class="offset-lg-6 col-lg-6 h-100 pl-5 py-4 slide__text">
-									<h2 class="mb-2 pt-3 text-uppercase text-center text-lg-left block-heading slide__text-heading theme__text--light">Послуги:<span class="ml-2 slide__text-heading--smaller">виробництво та транспортування теплової енергії</span></h2>
+									<h2 class="mb-2 pt-3 text-uppercase text-center text-lg-left slide__text-heading theme__text--light">Послуги:<span class="ml-2 slide__text-heading--smaller">виробництво та транспортування теплової енергії</span></h2>
 									<p class="mb-0 text-center text-lg-left slide__text-description theme__text--light">Рік заснування підприємства:<span class="ml-2 text-normal slide__text-description--bigger">2017</span></p>
 									<p class="mb-0 text-center text-lg-left slide__text-description theme__text--light">Кількість співробітників:<span class="ml-2 mr-1 slide__text-description--bigger">0 </span>осіб</p>
 									<p class="mb-0 text-center text-lg-left slide__text-description theme__text--light">Кількість абонентів:<span class="ml-2 mr-1 slide__text-description--bigger">1265</span></p>
@@ -375,7 +375,7 @@
 		</div>
 		<!-- news-block -->
 		<div class="container-fluid mb-5 pt-5 theme__bg--light">
-			<h2 class="mb-5 text-center text-uppercase font-weight-bold block-heading theme__text--dark">Новини</h2>
+			<h2 class="mb-5 text-center text-uppercase font-weight-bold block-heading theme__text--dark" data-text-heading="Новини">Новини</h2>
 			<div class="js-news">
 				<!-- news__card -->
 				<div class="px-2 mb-4">
@@ -466,7 +466,7 @@
 		</div>
 		<div class="col-12 w-100 mb-5"></div> <!-- its like a hr, but invisible -->
 		<!-- important-sections -->
-		<h2 class="mb-5 text-center text-uppercase font-weight-bold block-heading theme__text--dark">важливі розділи</h2>
+		<h2 class="mb-5 text-center text-uppercase font-weight-bold block-heading theme__text--dark" data-text-heading="важливі розділи">важливі розділи</h2>
 		<div class="container-fluid py-2 theme__bg--normal">
 			<div class="row mt-5 pb-5">
 				<!-- important-sections__card -->
