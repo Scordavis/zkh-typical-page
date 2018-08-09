@@ -220,12 +220,12 @@ button {
   .header-page__text {
     font-size: 15px;
     text-transform: uppercase;
-    font-family: 'MuseoSansBold'; }
+    font-weight: 900; }
     .header-page__text--medium {
       font-size: 17px; }
     .header-page__text--bigger {
       font-size: 20px;
-      font-family: 'MuseoSansBold'; }
+      font-weight: 700; }
     .header-page__text--logo-title {
       font-size: 24px;
       font-weight: bold;
@@ -384,7 +384,8 @@ button {
   position: relative;
   z-index: 2; }
   .logo-company__self {
-    z-index: 10; }
+    z-index: 10;
+    max-width: 400px; }
   .logo-company__shape {
     position: absolute;
     width: 300px;
@@ -678,6 +679,8 @@ button {
     line-height: 1.2; }
   .header-page__text--logo-description {
     font-size: 14px; }
+  .logo-company__self {
+    max-width: 100%; }
   .logo-company__shape {
     right: -40px; }
   .news__card {
@@ -690,6 +693,8 @@ button {
 @media (max-width: 991.98px) {
   .logo-company:after {
     display: none; }
+  .logo-company__self {
+    max-width: 400px; }
   .navbar__background-image {
     display: none; }
   .footer-page__text--responsive {
@@ -727,6 +732,8 @@ button {
       display: block;
       text-align: center;
       width: 100%; }
+  .logo-company__self {
+    max-width: 100%; }
   .slide__text-heading {
     height: auto;
     line-height: 1.2; } }
