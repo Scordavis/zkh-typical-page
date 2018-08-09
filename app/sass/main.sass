@@ -172,6 +172,9 @@ button
 
 	&__icon
 	&__emergency
+		font-family: 'MuseoSansBold'
+		font-size: 14px
+		font-weight: 700
 		@include transition(.3s)
 	&__text
 		font-size: 15px
@@ -326,7 +329,9 @@ button
 	&__link
 		&:after
 			display: inline-block
-			position: relative
+			position: absolute
+			top: 0
+			right: -1.6vw
 			content: '\/'
 			margin-left: 1vw
 			color: red
