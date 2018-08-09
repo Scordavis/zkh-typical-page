@@ -110,6 +110,10 @@ b, strong {
   position: relative;
   min-height: 80vh; }
 
+.z-index-5 {
+  position: relative;
+  z-index: 5; }
+
 .reset-link {
   color: inherit; }
   .reset-link:hover, .reset-link:active, .reset-link:focus {
