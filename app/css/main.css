@@ -650,6 +650,31 @@ button {
 .important-sections__text {
   font-size: 13px; }
 
+.managment {
+  min-height: 55vh;
+  background-position: 0 100%;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  border-top: 1px solid #b8b8b8;
+  z-index: 5; }
+  .managment__company-name {
+    font-size: 22px; }
+  .managment__item {
+    background-color: #f8f8f8;
+    border: 1px solid white; }
+    .managment__item:nth-child(even) {
+      background-color: #ededed; }
+  .managment__info {
+    font-family: 'MuseoSansBold';
+    font-size: 18px;
+    line-height: 1; }
+  .managment__post {
+    font-size: 22px; }
+  .managment__name {
+    font-size: 30px;
+    word-break: break-word; }
+
 .footer-page {
   font-size: 14px; }
   .footer-page__text {
@@ -745,4 +770,6 @@ button {
     max-width: 100%; }
   .slide__text-heading {
     height: auto;
-    line-height: 1.2; } }
+    line-height: 1.2; }
+  .block-heading:after {
+    display: none; } }
