@@ -3,8 +3,14 @@
 
 /*==========  Desktop First  ==========*/
 
+@media (max-width: 1440.98px)
+	// .logo-company
+	.logo-company
+		&__shape
+			right: 0px
+
 // ≥1200px
-+media-breakpoint-down(lg)
+@media (max-width: 1199.98px)
 	body
 		font-size: 14px
 	.header-page
@@ -19,12 +25,16 @@
 			&--logo-title
 				font-size: 20px
 				line-height: 1.2
+
 			&--logo-description
 				font-size: 14px
 	// .logo-company
 	.logo-company
-		&:after
-			right: -60px
+		&__self
+			max-width: 100%
+		&__shape
+			right: -40px
+
 	.slide
 		&__overlay
 
@@ -44,10 +54,14 @@
 				font-size: 1.3vw
 
 // ≥992px
-+media-breakpoint-down(md)
+@media (max-width: 991.98px)
 	.logo-company
 		&:after
 			display: none
+				// .logo-company
+		&__self
+			max-width: 400px
+
 
 	.navbar
 		&__background-image
@@ -59,9 +73,11 @@
 				font-size: inherit
 
 // ≥768px
-+media-breakpoint-down(sm)
-	.emergency-service__table-header
-		display: none
+@media (max-width: 767.98px)
+	.emergency-service
+		&__table-header
+			display: none
+		&__phone
 	.emergency-service tbody .emergency-service__table-data
 		display: block
 		&:first-child
@@ -75,13 +91,15 @@
 			width: 100%
 	.slide
 		&__text-heading
-			height: auto
+			height: 14vw
 			line-height: 1.4
 
 // ≥576px
-+media-breakpoint-down(xs)
-	.emergency-service__table-header
-		display: none
+@media (max-width: 575.98px)
+	.emergency-service
+		&__table-header
+			display: none
+		&__phone
 	.emergency-service tbody .emergency-service__table-data
 		display: block
 		&:first-child
@@ -93,11 +111,19 @@
 			display: block
 			text-align: center
 			width: 100%
+
+	.logo-company
+		&__self
+			max-width: 100%
+
 	.slide
 		&__text-heading
 			height: auto
 			line-height: 1.2
 
+	.block-heading
+		&:after
+			display: none
 
 
 
@@ -106,16 +132,4 @@
 
 
 
-/*==========  Mobile First  ==========*/
 
-// ≤576px
-+media-breakpoint-up(sm)
-
-// ≤768px
-+media-breakpoint-up(md)
-
-// ≤992px
-+media-breakpoint-up(lg)
-
-// ≤1200px
-+media-breakpoint-up(xl)

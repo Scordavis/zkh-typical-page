@@ -35,49 +35,38 @@ b, strong
 
 // custom classes
 
-// custom classes
-.bx-wrapper
-	margin-top:  1px
+// animation
+
+.slideDown
+	animation-name: slideDown
+	-webkit-animation-name: slideDown
+	animation-duration: 2s
+	-webkit-animation-duration: 2s
+	animation-timing-function: ease
+	-webkit-animation-timing-function: ease
+	animation-iteration-count: infinite
+	-webkit-animation-iteration-count: infinite
+	visibility: visible !important
 
 
-#subj-pages-block
-	display: none
-	width: 70%
-	margin: 0 auto
-	background: rgba(255,255,255,0.6)
-	padding-bottom: 20px
+@keyframes slideDown
+	0%
+		opacity: 1
 
+	50%
+		opacity: 0
 
+	100%
+		opacity: 1
 
-#name
-	color: brown
-	font-weight: bolder
+// .content-wrapper for some height
+.content-wrapper
+	position: relative
+	min-height: 80vh
 
-
-#one-comment
-	width: 100%
-	padding: 10px
-	margin-bottom: 10px
-	background: #fff
-
-#comment
-	padding: 10px
-
-#open-form a
-	color: blue
-	font-weight: bolder
-	cursor: pointer
-	padding: 20px
-
-
-#open-form a
-	&:hover
-		color: red
-		font-weight: bolder
-
-#error-comment
-	font-weight: bolder
-	color: red
+.z-index-5
+	position: relative
+	z-index: 5
 
 // reset-links
 .reset-link
@@ -105,6 +94,21 @@ button
 
 // @include transition(.2s)
 
+.block-heading
+	position: relative
+	font: 30px 'MuseoSansBlack'
+	&:after
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    display: block
+    content: attr(data-text-heading)
+    text-align: center
+    font: 60px/40px 'MuseoSansBlack'
+    color: inherit
+    opacity: .05
+    text-transform: uppercase
 
 // Serega, zameni stili dlja knopok v osnovnom faile na eti
 .button
@@ -162,6 +166,7 @@ button
 .header-page
 	position: relative
 	min-height: 70px
+	// height: 70px
 	color: white
 	font-size: 18px
 	z-index: 8
@@ -172,12 +177,23 @@ button
 
 	&__icon
 	&__emergency
+		font-family: 'MuseoSansBold'
+		font-size: 14px
+		font-weight: 700
 		@include transition(.3s)
 	&__text
-		font-size: 18px
+		font-size: 15px
 		text-transform: uppercase
+		// font-family: 'MuseoSansBold'
+		font-weight: 900
+
+		&--medium
+			font-size: 17px
+
 		&--bigger
-			font-weight: bold
+			font-size: 20px
+			font-weight: 700
+
 		&--logo-title
 			font-size: 24px
 			font-weight: bold
@@ -188,16 +204,26 @@ button
 
 // .navbar
 .navbar
-	min-height: 80px
-	height: 80px
+	min-height: 106px
+	height: 106px
 	&__container
 		align-self: stretch
 
 	&__background-image
-		background-size: cover
 		background-position: 0 center
-		background-repeat: no-repeat
 		opacity: .5
+		&--fullsize
+			background-size: cover
+			background-repeat: no-repeat
+		&--pattern
+			background-size: contain
+			background-repeat: repeat-x
+		&--wrapper
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+
 	&__wrapper
 		text-transform: uppercase
 		font-weight: bold
@@ -301,8 +327,24 @@ button
 
 .nav
 	&__item
+		position: relative
+		font-size: 15px
+
 		&--mobile
 	&__link
+		&:after
+			display: inline-block
+			position: absolute
+			top: 0
+			right: -1.6vw
+			content: '\/'
+			margin-left: 1vw
+			color: red
+
+		&:last-child
+			&:after
+				display: none
+
 		&--mobile
 	&__link-wrapper
 		z-index: 10
@@ -313,38 +355,241 @@ button
 // .logo-company
 .logo-company
 	position: relative
-	background-color: white
 	z-index: 2
-	&:after
-		position: absolute
-		display: block
-		content: ''
-		height: 360px
-		width: 360px
-		right: -220px
-		background-color: inherit
-		transform: rotate(25deg)
-		z-index: 1
+
 	&__self
 		z-index: 10
+		max-width: 400px
+
+	&__shape
+		position: absolute
+		width: 300px
+		height: 300px
+		right: 0px
+		transform: rotate(25deg)
+		background-color: #ffffff
+
 
 // .slider
+
 .slider
+	position: relative
+	z-index: 4
+
 	&__wrapper
-		position: relative
-		height: 300px
-		z-index: 4
+		overflow: hidden
+
 .slide
+	height: 300px
+	&__bg
+		background-size: cover
+		background-position: center center
+		background-repeat: no-repeat
+
+	&__content
+	&__overlay
+		top: 0
+		right: 0
+		bottom: 0
+		left: 16vw
+		opacity: .6
+
+	&__overlay-path
 	&__text
+
 	&__text-heading
-		height: 80px
+		height: 100px
+		font-family: 'MuseoSansBold'
 		font-size: 16px
+		font-weight: bold
+
 		&--smaller
+			text-transform: none
+			font-weight: normal
+
+	&__text-description
+		font-family: 'MuseoSansBold'
+		font-size: 17px
+		line-height: 1.3
+
+		&--bigger
+			font-size: 22px
+			font-weight: bold
+
+.slick
+	&-arrow
+		top: 89%
+		z-index: 5
+
+	&-prev
+		left: 60.5vw
+		&:before
+			@include transition(.2s)
+			content: url(../img/lg-arrow-left.png)
+
+	&-next
+		left: 66vw
+		&:before
+			@include transition(.2s)
+			content: url(../img/lg-arrow-right.png)
+
+	&-dots
+		bottom: 7%
+		left: 14vw
+
+		& li
+			margin: 0
+			& button
+				&:before
+					content: ''
+					top: 25%
+					left: 25%
+					width: 10px
+					height: 10px
+					border-style: solid
+					border-width: 4px
+					border-radius: 10px
+					border-color: transparent
+					opacity: 1
+					@include transition(.2s)
+				&:hover
+					&:before
+						opacity: .4
+
+			&.slick-active
+				& button
+					&:before
+						width: 10px
+						height: 10px
+						box-shadow: 0px 0px 0px 4px #daa520
+						opacity: 1
 
 	&__text-description
 		&--bigger
 			font-size: 20px
 			font-weight: bold
+
+@media (max-width: 1679.98px)
+	.slide__overlay
+		left: 18vw
+
+@media (max-width: 1439.98px)
+	.slide__overlay
+		left: 17vw
+
+@media (max-width: 1365.98px)
+	.slide__overlay
+		left: 21vw
+
+	.slick
+		&-arrow
+			top: 89%
+
+		&-prev
+			left: 60vw
+
+		&-next
+			left: 67vw
+
+@media (max-width: 1279.98px)
+	.slide__overlay
+		left: 33vw
+
+@media (max-width: 1240px)
+	.slide__overlay
+		left: 28vw
+
+@media (max-width: 1090px)
+	.slide__overlay
+		left: -15vw
+		width: 200%!important
+
+	.slick
+		&-arrow
+			top: 89%
+
+		&-prev
+			left: 59vw
+
+		&-next
+			left: 67vw
+
+@media (max-width: 1010px)
+	.slide__overlay
+		left: -10vw
+		width: 200%!important
+
+	.slick
+		&-arrow
+			top: 89%
+
+		&-prev
+			left: 60.5vw
+
+		&-next
+			left: 66vw
+
+@media (max-width: 1016.98px)
+	.slide__overlay
+		left: -9vw
+		width: 200%!important
+
+	.slick
+		&-arrow
+			top: 89%
+
+		&-prev
+			left: 59vw
+
+		&-next
+			left: 67vw
+
+
+@media (max-width: 991px)
+	.slide__overlay
+		left: 0
+		width: 300%!important
+
+	.slick
+		&-dots
+			left: 0
+
+		&-arrow
+			top: 89%
+
+		&-prev
+			left: 43vw
+
+		&-next
+			left: 55vw
+
+@media (max-width: 767.98px)
+	.slick
+		&-dots
+			left: 0
+
+		&-arrow
+			top: 89%
+
+		&-prev
+			left: 41vw
+
+		&-next
+			left: 57vw
+
+@media (max-width: 479.98px)
+	.slick
+		&-dots
+			left: 0
+
+		&-arrow
+			top: 89%
+
+		&-prev
+			left: 35vw
+
+		&-next
+			left: 64vw
 
 // .news
 .news
@@ -372,9 +617,14 @@ button
 			box-shadow: 0 4px 20px lighten(black, 40%)
 
 	&__title
-		font-size: 18px
+		font-size: 15px
+		font-family: 'MuseoSansBlack'
+		word-break: break-word
 
 	&__description
+		font-size: 14px
+		line-height: 1.2
+
 	&__attribute
 		&--time
 			&:before
@@ -399,13 +649,52 @@ button
 			box-shadow: 0 4px 20px lighten(black, 40%)
 
 	&__img
-		font-size: 48px
+		height: 60px
+		width: auto
 
 	&__text
 		font-size: 13px
 
+// .managment
+.managment
+	min-height: 55vh
+	background-position: 0 100%
+	background-size: contain
+	background-repeat: no-repeat
+	border-top: 1px solid #b8b8b8
+	z-index: 5
+
+	&__company-name
+		font-size: 22px
+
+	&__item
+		background-color: #f8f8f8
+		border: 1px solid white
+		&:nth-child(even)
+			background-color: #ededed
+
+	&__wrapper
+	&__photo
+	&__img
+	&__info
+		font-family: 'MuseoSansBold'
+		font-size: 18px
+		line-height: 1
+
+	&__post
+		font-size: 22px
+
+	&__name
+		font-size: 30px
+		word-break: break-word
+
+	&__contacts
+	&__phone
+
 // .footer-page
 .footer-page
+	font-size: 14px
+
 	&__item
 	&__text
 		font-size: 18px
@@ -425,12 +714,16 @@ button
 
 
 	&__link
+		font-family: 'MuseoSansMedium'
+		@include transition(.3s)
+
 		&:hover
 			opacity: .7
 
 	&__copyright
 		font-size: 13px
 		font-weight: light
+
 
 
 
