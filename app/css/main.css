@@ -668,7 +668,10 @@ button {
   .managment__info {
     font-family: 'MuseoSansBold';
     font-size: 18px;
-    line-height: 1; }
+    line-height: 1;
+    border-left: 1px solid white; }
+    .managment__info:first-child {
+      border: none; }
   .managment__post {
     font-size: 22px; }
   .managment__name {
@@ -736,6 +739,8 @@ button {
     max-width: 400px; }
   .navbar__background-image {
     display: none; }
+  .managment__info {
+    border: none; }
   .footer-page__text--responsive {
     font-size: inherit; } }
 
