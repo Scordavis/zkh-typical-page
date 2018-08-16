@@ -674,6 +674,11 @@ button {
   .managment__name {
     font-size: 30px;
     word-break: break-word; }
+    .managment__name--medium {
+      font-family: 'MuseoSansMedium';
+      font-size: 22px; }
+  .managment__phone--big {
+    font-size: 22px; }
 
 .footer-page {
   font-size: 14px; }
