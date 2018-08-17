@@ -665,6 +665,12 @@ button {
     border: 1px solid white; }
     .managment__item:nth-child(even) {
       background-color: #ededed; }
+  .managment__photo {
+    min-height: 200px;
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
   .managment__info {
     font-family: 'MuseoSansBold';
     font-size: 18px;
