@@ -739,6 +739,8 @@ button {
     max-width: 400px; }
   .navbar__background-image {
     display: none; }
+  .nav__link:after {
+    display: none; }
   .managment__info {
     border: none; }
   .footer-page__text--responsive {
